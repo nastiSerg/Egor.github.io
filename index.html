@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Люди любят</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fonts.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <div class="logo">
+              <a href="./index.html"><img src="./images/logo.png" alt=""> </a>
+            </div>
+            <div class="links">
+                <h1 onclick="togglePanel()">ПРОДУКЦИЯ</h1>
+                <div class="panel" id="panel">
+                    <img src="./images/bakery.jpg" alt="">
+                    <div class="block1">
+                        <a href="./hleb.html">Хлеб</a>
+                        <a href="">Торты и пирожные</a>
+                        <a href="">Пироги</a>
+                    </div>
+                    <div class="block2">
+                        <a href="">Слойка</a>
+                        <a href="">Сдоба</a>
+                        <a href="">Напитки</a>
+                    </div>
+                    <div class="block3">
+                        <a href="">Печенье</a>
+                        <a href="">Кухня</a>
+                        <a class="without" href="">Без муки</a>
+                    </div>
+                </div>
+                <a href="">НОВОСТИ И АКЦИИ</a>
+                <a href="">РАБОТА</a>
+                <a href="">ЗАБОТА О ГОСТЕ</a>
+                <img src="./images/backeryplacessign.png" alt=""><a href="" class="pek">ПЕКАРНИ</a>
+                <a href="" class="fran">ФРАНШИЗА</a>
+            </div>
+            <div class="vk">
+                <a href="https://vk.com/ludilovebakery"><img src="./images/vk.png" alt=""></a>
+            </div>
+        </div>
+        <div class="video">
+            <video src="./images/hleb.mp4" muted autoplay loop></video>
+        </div>
+        <div class="blockFood">
+           <div class="blockTop">
+                <div class="left">
+                    <img src="./images/hleb1.jpg" alt="">
+                    <a href="">Хлеб</a>
+                </div>
+                <div class="right">
+                    <div class="topTop">
+                        <img src="./images/cake.jpg" alt="">
+                        <a href="">Торты и пирожные</a>
+                    </div>
+                    <div class="bottomBottom">
+                        <img src="./images/pirog.jpeg" alt="">
+                        <a href="">Пироги</a>
+                    </div>
+                </div>
+           </div>
+           <div class="blockBottom">
+                <div class="first">
+                    <img src="./images/sloika.jpg" alt="">
+                    <a href="">Слойка</a>
+                </div>
+                <div class="second">
+                    <img src="./images/sdoba.jpg" alt="">
+                    <a href="">Сдоба</a>
+                </div>
+                <div class="third">
+                    <img src="./images/mors.jpg" alt="">
+                    <a href="">Напитки</a>
+                </div>
+                <div class="forth">
+                    <img src="./images/cookies.jpg" alt="">
+                    <a href="">Печенье</a>
+                </div>
+                <div class="fifth">
+                    <img src="./images/kitchen.jpg" alt="">
+                    <a href="">Кухня</a>
+                </div>
+           </div>
+        </div>
+        <div class="footer">
+            <div class="leftFoot">
+                <img src="./images/map.jpg" alt="">
+            </div>
+            <div class="rightFoot">
+                <a href="">КОНТАКТЫ</a>
+                <a href="">ПРОДУКЦИЯ</a>
+                <a href="">НОВОСТИ И АКЦИИ</a>
+                <a href="">РАБОТА</a>
+                <p>@ Люди любят все права защищены 2024</p>   
+            </div>
+        </div>
+        <button onclick="scrollToTop()" id="scrollToTopBtn">&#9650;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

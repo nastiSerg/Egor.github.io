@@ -1,0 +1,85 @@
+/*верх хлеба*/
+.blockHleb{
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/hlebBanner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.textTop{
+    width: 100%;
+    height: 20%;
+    padding-top: 40px;
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+}
+.textTop a, .textTop p{
+    margin-left: 1%;
+}
+.textTop a{
+    color: orange;
+}
+.textTop .black{
+    color: black;
+}
+.textMiddle{
+    width: 100%;
+    height: 60%;
+    padding-top: 40px;
+    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.textMiddle .name{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.textBottom{
+    width: 100%;
+    height: 20%;
+    padding-top: 70px;
+    padding-left: 220px;
+    display: flex;
+    flex-direction: row;
+}
+.textBottom a{
+    margin-left: 2%;
+}
+/*хлебные варианты*/
+.varHlebi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.b1,.b2,.b3,.b4,.b5,.b6{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.name1,.var1,.var2,.var3,.var4{
+    width: 20%;
+    height: 100%;
+}
+.name1 img,.var1 img,.var2 img,.var3 img,.var4 img{
+    width: 100%;
+    height: 100%;
+}
+.var1 img:hover,.var2 img:hover,.var3 img:hover,.var4 img:hover{
+    transition: 2s ease;
+    opacity: 0.3;
+}
+.var1 img:not(:hover),.var2 img:not(:hover),.var3 img:not(:hover),.var4 img:not(:hover){
+    transition: 2s ease;
+}
+.name1{
+    background-color: bisque;
+}
+.textBottom a:hover{
+    color: orange; 
+    text-decoration: underline; 
+    transition: 0.5s;
+}

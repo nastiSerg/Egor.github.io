@@ -1,0 +1,239 @@
+/*применяется ко всему*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+}
+a, h1, p{
+    font-family: 'South';
+    text-decoration: none; 
+    color: black;
+}
+/*контейнер в котором всё лежит*/
+.mainContainer{
+    width: 100%;
+    margin: auto;
+}
+/*составляющие хэдера*/
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 40%;
+    width: 40%;
+}
+.logo a{
+    text-align: center;
+}
+.links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.links a, .links h1{
+    font-size: 15px;
+    margin-left: 7%;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.links img{
+    width: 2%;
+    height: 18%;
+    margin-left: 30px;
+    margin-right: 2px;
+}
+.links .pek{
+    margin-left: 0;
+}
+.links .fran{
+    color: rgb(255, 98, 0);
+}
+.vk{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vk img{
+    width: 11%;
+    height: 20%;
+}
+.vk a{
+    text-align: center;
+}
+/*блок с видео*/
+.video{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*блок с едой*/
+.blockFood{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.blockTop{
+    width: 100%;
+    height: 66.66%;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    position: relative;
+    width: 66.66%;
+    height: 100%;
+}
+.left a, .topTop a, .bottomBottom a, .first a, .second a, .third a, .forth a, .fifth a{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.topTop, .bottomBottom{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.blockBottom{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    flex-direction: row;
+}
+.first, .second, .third, .forth, .fifth{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.blockFood img{
+    width: 100%;
+    height: 100%;
+}
+.left:hover, .topTop:hover, .bottomBottom:hover, .first:hover, .second:hover, .third:hover, .forth:hover, .fifth:hover{
+    transition: 2s ease;
+    opacity: 0.3;
+}
+.left:not(:hover), .topTop:not(:hover), .bottomBottom:not(:hover), .first:not(:hover), .second:not(:hover), .third:not(:hover), .forth:not(:hover), .fifth:not(:hover){
+    transition: 2s ease;
+}
+/*футер сайта*/
+.footer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+}
+.leftFoot{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftFoot img{
+    height: 80%;
+    width: 80%;
+}
+.rightFoot{
+    width: 50%;
+    height: 100%; 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 350%;
+}
+
+/*кнопка прокрутки вверх*/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #333;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+#scrollToTopBtn:hover {
+    opacity: 1;
+}
+
+/*выдвигающаяся панель*/
+#panel{
+    visibility: hidden;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: top 1s ease;
+    display: flex;
+    flex-direction: row;
+}
+.panel img{
+    width: 20%;
+    height: 90%;
+    margin-left: 300px;
+}
+.block1 , .block2, .block3{
+    width: calc(80% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+.block3 .without{
+    color: green;
+}
+.block1 a:hover, .block2 a:hover, .block3 a:hover{
+    color: orange; 
+    text-decoration: underline; 
+    transition: 0.5s;
+}
+.block3 .without:hover{
+    color: green;
+    text-decoration: underline; 
+    transition: 0.5s;
+}
